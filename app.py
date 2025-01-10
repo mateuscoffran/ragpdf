@@ -2,7 +2,6 @@ import os
 import tempfile
 import pandas as pd
 import pytesseract
-from PIL import Image
 import docx
 import streamlit as st
 from langchain.chains import RetrievalQA
@@ -14,9 +13,6 @@ from langchain.vectorstores import Chroma
 from pypdf.errors import PdfReadError
 from openai.error import AuthenticationError, InvalidRequestError
 
-# Adicionar a imagem no cabeçalho
-image_url = "https://cienciadosdados.com/images/CINCIA_DOS_DADOS_4.png"
-st.image(image_url, use_column_width=True)
 
 # Adicionar o nome do aplicativo
 st.subheader("Q&A com IA - PLN usando LangChain")
