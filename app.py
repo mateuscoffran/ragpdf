@@ -2,7 +2,6 @@ import os
 import tempfile
 import pandas as pd
 import pytesseract
-from PIL import Image
 import docx
 import streamlit as st
 from langchain.chains import RetrievalQA
